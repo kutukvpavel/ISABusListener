@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Doc\QuartusProjects\diamant isa listener\simulation\modelsim
+vDiamantISAListener
+IP0>e6ZIA9Wno0[_P:enj@2
+VRoJ^PJ69dzQQDbne03RBC1
+Z1 dE:\Doc\QuartusProjects\diamant isa listener\simulation\modelsim
+w1610226466
+8E:/Doc/QuartusProjects/diamant isa listener/DiamantISAListener.v
+FE:/Doc/QuartusProjects/diamant isa listener/DiamantISAListener.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@diamant@i@s@a@listener
+!i10b 1
+!s100 53fICgABHmXBf92a[Sddi2
+!s85 0
+!s108 1610226493.894000
+!s107 E:/Doc/QuartusProjects/diamant isa listener/DiamantISAListener.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Doc/QuartusProjects/diamant isa listener|E:/Doc/QuartusProjects/diamant isa listener/DiamantISAListener.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work {+incdir+E:/Doc/QuartusProjects/diamant isa listener} -O0
+vMemory
+!i10b 1
+!s100 :SmUTZQ5mmj2WN[?a:hmU0
+IY]:2J?[Vz@Wibe1[8?18R1
+VIRQl<aI@A`V?^kDJc9RP=1
+R1
+w1610153708
+8E:/Doc/QuartusProjects/diamant isa listener/Memory.v
+FE:/Doc/QuartusProjects/diamant isa listener/Memory.v
+L0 39
+R2
+r1
+!s85 0
+31
+!s108 1610226493.985000
+!s107 E:/Doc/QuartusProjects/diamant isa listener/Memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Doc/QuartusProjects/diamant isa listener|E:/Doc/QuartusProjects/diamant isa listener/Memory.v|
+!s101 -O0
+R3
+R4
+n@memory

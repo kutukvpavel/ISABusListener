@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Doc\QuartusProjects\diamant isa listener\simulation\modelsim
+vDiamantISAListener
+!i10b 1
+!s100 ASCIS6lUaRbk9[CFg0CNN2
+Ib8cLcHT6Z]PB]ObRe<jhZ2
+VRoJ^PJ69dzQQDbne03RBC1
+Z1 dE:\Doc\QuartusProjects\diamant isa listener\simulation\modelsim
+w1610242635
+8DiamantISAListener.vo
+FDiamantISAListener.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1610242831.767000
+!s107 DiamantISAListener.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|DiamantISAListener.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+n@diamant@i@s@a@listener

@@ -1,0 +1,90 @@
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/09/2021 07:19:10"
+                                                                                
+// Verilog Test Bench template for design : DiamantISAListener
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ns
+module DiamantISAListener_vlg_tst();
+// test vector input registers
+reg AEN;
+reg BALE;
+reg Clock50MHz = 0;
+reg ReadClock = 0;
+reg Reset = 0;
+reg [19:0] SA = 0;
+reg SBHE;
+reg [15:0] SD;
+reg [3:0] nCS = 4'b1111;
+reg nIOCS16 = 1;
+reg nIOR = 1;
+reg nIOW = 1;
+reg nMEMCS16 = 1;
+reg nMEMR = 1;
+reg nMEMW = 1;
+// wires                                               
+wire [25:0]  DataOut;
+wire Ready;
+
+// assign statements (if any)                          
+DiamantISAListener i1 (
+// port map - connection between master ports and signals/registers   
+	.AEN(AEN),
+	.BALE(BALE),
+	.Clock50MHz(Clock50MHz),
+	.DataOut(DataOut),
+	.ReadClock(ReadClock),
+	.Ready(Ready),
+	.Reset(Reset),
+	.SA(SA),
+	.SBHE(SBHE),
+	.SD(SD),
+	.nCS(nCS),
+	.nIOCS16(nIOCS16),
+	.nIOR(nIOR),
+	.nIOW(nIOW),
+	.nMEMCS16(nMEMCS16),
+	.nMEMR(nMEMR),
+	.nMEMW(nMEMW)
+);
+initial                                                
+begin                                             
+forever #10 Clock50MHz <= ~Clock50MHz;
+end  
+
+integer i;
+integer cycles = 0;
+                                                  
+always                                                                
+begin
+	cycles <= cycles + 1;
+	SA <= $random;
+	$display("Data in %d: %H", cycles - 2, SA);
+	#10;
+	nCS <= 4'b1101;
+	#100;
+	nCS <= 4'hf;
+	#100;
+	if (Ready) begin //Reading
+		for (i = 0; i < 4096; i = i + 1) begin
+			ReadClock <= 1;
+			#100;
+			ReadClock <= 0;
+			$display("Data out %d: %H", i, DataOut);
+			#100;
+		end
+		Reset <= 1;
+		#100;
+		Reset <= 0;
+		cycles <= 0;
+	end
+end         
+                                           
+endmodule
+
