@@ -1,5 +1,5 @@
 # ISABusListener
-Altera Cyclone-II-based ISA bus address listener developed for reverse-engineering of custom ISA boards. Allow you to map addresses to chips by recording ISA addresses that cause /CS pins to be asserted.
+Altera Cyclone-II-based ISA bus address listener developed for reverse-engineering of custom ISA boards. Allows you to map addresses to chips by recording ISA addresses that cause /CS pins to be asserted.
 
 Based on EP2C5... development board from AliExpress: http://land-boards.com/blwiki/index.php?title=Cyclone_II_EP2C5_Mini_Dev_Board, with unneeded stuff removed as described in the land-boards page to free some GPIO pins.
 
